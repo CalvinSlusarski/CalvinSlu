@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res) {
-  res.send(path.resolve(__dirname + '../public/unity/unity.html'));
+  res.send(path.resolve(__dirname + '/../public/unity/unity.html'));
 });
 
 module.exports = router;
