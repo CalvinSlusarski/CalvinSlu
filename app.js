@@ -7,7 +7,6 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var unity = require('./routes/unity');
-var unityWebPlayer = require('./routes/unityWebPlayer');
 
 var app = express();
 
