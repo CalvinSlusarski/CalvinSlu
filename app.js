@@ -6,6 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
+var routes = require('./routes/photobook');
 //var unity = require('./routes/unity');
 
 var app = express();
@@ -28,6 +29,7 @@ app.use(function(req, res, next) {
     var err = new Error('Not Found');
     err.status = 404;
     next(err);
+    //res.render('index', { title: 'Express' });
 });
 
 /// error handlers
