@@ -66,15 +66,14 @@ input.invalid { border: 1px solid red !important; background-color: #FFAAAA !imp
 .configuration button { height: 2em; }
 
 /* Custom CSS */
-.polaroid {
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-left: 5px;
-    padding-bottom: 10px;
-    box-shadow: 3px 3px 1px #888888;
-    border: 1px solid black;
-}
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 10px;
+  box-shadow: 3px 3px 1px #C7C7C7;
+  border: 1px solid rgb(174, 174, 174);
+  width: 215px;
 .polaroid img {
-    height: 151;
-    width: 131;
+    height: 151px;
+    width: 131px;
 }
