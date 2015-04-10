@@ -21,7 +21,7 @@ define(['durandal/system', 'durandal/app', 'durandal/viewLocator'],  function (s
     system.debug(true);
     //>>excludeEnd("build");
 
-    app.title = 'Durandal Samples';
+    app.title = 'Photobook';
 
     //specify which plugins to install and their configuration
     app.configurePlugins({
