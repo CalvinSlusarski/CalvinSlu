@@ -64,3 +64,12 @@ input.invalid { border: 1px solid red !important; background-color: #FFAAAA !imp
 
 .configuration select { height: 1.7em; }
 .configuration button { height: 2em; }
+
+/* Custom CSS */
+.polaroid {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 30px;
+    box-shadow: 3px 3px 1px #888888;
+}
