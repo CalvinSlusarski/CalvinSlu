@@ -12,8 +12,6 @@
     bottom: 0;
     overflow-x: scroll;
     overflow-y: auto;
-    background-image: url('img/Bkg-pic.jpg');
-    background-repeat: repeat;
 }
 
 section {
@@ -70,7 +68,9 @@ input.invalid { border: 1px solid red !important; background-color: #FFAAAA !imp
 /* Custom CSS */
 .img-container {
     position: relative;
-    display: inline-block; /* or block */
+    display: inline-block;
+    margin-top: 10px;
+     /* or block */
     /*margin: 20px;*/ /* not required */
 }
 .polaroid-container {
@@ -84,7 +84,7 @@ input.invalid { border: 1px solid red !important; background-color: #FFAAAA !imp
     left: 0;
 }
 .shadow {
-    box-shadow: 0 20px 5px 5px #cccccc; /* adjust color, blur or spread if you want */
+    box-shadow: 0 20px 5px 5px #272525; /* adjust color, blur or spread if you want */
     transform: skewy(-3deg);
     position: absolute;
     left: 8px;
@@ -111,4 +111,9 @@ input.invalid { border: 1px solid red !important; background-color: #FFAAAA !imp
   z-index: 100;
   margin-top: 4px;
   margin-left: 4px;
+}
+.stickyNote {
+    top: 0px; 
+    left: 0px;
+    position: absolute;
 }
