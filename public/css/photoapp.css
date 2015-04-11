@@ -10,8 +10,10 @@
     right: 0;
     top: 50px;
     bottom: 0;
-    overflow-x: hidden;
+    overflow-x: scroll;
     overflow-y: auto;
+    background-image: url('img/Bkg-pic.jpg');
+    background-repeat: repeat;
 }
 
 section {
@@ -69,7 +71,7 @@ input.invalid { border: 1px solid red !important; background-color: #FFAAAA !imp
 .img-container {
     position: relative;
     display: inline-block; /* or block */
-    margin: 20px; /* not required */
+    /*margin: 20px;*/ /* not required */
 }
 .polaroid-container {
     padding: 5px;
