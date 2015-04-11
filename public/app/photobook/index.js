@@ -1,5 +1,5 @@
 ﻿
-define(['durandal/app', 'durandal/system',  'jquery', 'knockout'], function (app, system,  $, ko) {
+define(['durandal/app', 'durandal/system',  'jquery', 'knockout', 'jquery-ui'], function (app, system,  $, ko) {
     var vm = {};
     vm.photoInArray = ko.observableArray([]);
     // temp
@@ -14,7 +14,7 @@ define(['durandal/app', 'durandal/system',  'jquery', 'knockout'], function (app
     // end of temp
     setTimeout(function(){
         console.log('testing');
-            $('body').append('<script type="text/javascript" src="js/jquery-ui.min.js"></script>');
+            //$('body').append('<script type="text/javascript" src="js/jquery-ui.min.js"></script>');
             $( "#draggable" ).draggable();
     },2000)
     return vm;
