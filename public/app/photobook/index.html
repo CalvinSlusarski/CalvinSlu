@@ -3,7 +3,7 @@
 	<table>
 		<tr data-bind="foreach: photoInArray">
 		<td>
-		<div class="stickyNote">
+		<div class="stickyNote" data-bind="style: { 'left': $index()+1*400 }">
 			<div class="img-container"> 
 				<!-- ko if: tackTopLeft -->
 					<div class="circle"></div>
