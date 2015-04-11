@@ -1,4 +1,4 @@
-﻿define(['durandal/system', 'durandal/app', './sampleProductCategories', 'jquery', 'knockout'], function (system, app, sampleProductCategories, $, ko) {
+﻿define(['durandal/system', 'durandal/app', './sampleProductCategories', 'knockout'], function (system, app, sampleProductCategories, ko) {
     var CartLine = function () {
         var self = this;
         self.category = ko.observable();
