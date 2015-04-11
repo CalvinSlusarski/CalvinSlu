@@ -15,7 +15,7 @@ define(['durandal/app', 'durandal/system',  'jquery', 'knockout', 'jquery-ui'], 
     setTimeout(function(){
         console.log('testing');
             //$('body').append('<script type="text/javascript" src="js/jquery-ui.min.js"></script>');
-            $( "#draggable" ).draggable();
+            $(".stickyNote").draggable();
     },2000)
     return vm;
 
