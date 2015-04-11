@@ -5,10 +5,10 @@
     vm.photoInArray([
         new photo(
             'https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xfp1/v/t1.0-9/1935715_1247480994083_1588857_n.jpg?oh=b3aaa25ff227eaed78d559786b40701d&oe=55E14ECE&__gda__=1435988421_006f033de281db2cb6af7e0f05d1726c'
-        )]),
+        ),
         new photo(
             'https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xfp1/v/t1.0-9/1935715_1247480994083_1588857_n.jpg?oh=b3aaa25ff227eaed78d559786b40701d&oe=55E14ECE&__gda__=1435988421_006f033de281db2cb6af7e0f05d1726c'
-        )]),
+        )]);
     // end of temp
 
     return vm;
