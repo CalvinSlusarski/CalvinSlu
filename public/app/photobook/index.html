@@ -3,25 +3,34 @@
 	<table>
 		<tr data-bind="foreach: photoInArray">
 		<td>
-		<div class="stickyNote" data-bind="style: { 'left': $index()+1*400 }">
-			<div class="img-container"> 
-				<!-- ko if: tackTopLeft -->
-					<div class="circle"></div>
-				<!-- /ko -->
-				<!-- ko if: tackTopRight -->
-					<div style="margin-left: 97%;" class="circle"></div>
-				<!-- /ko -->
-				<div class="shadow">&nbsp;</div>
-				<div class="polaroid-container">
-			  	<img data-bind="attr: { src: url }">
-			  	<!-- ko if: comment -->
-			  	<p data-bind="text: comment"></p>
-			  	<!-- /ko -->
-				</div>
-			</div> 
+		<div class="stickyNote" data-bind="style: { 'left': $index()+1*400 }, template: {name: frameType }">
+
 		</div> 
 		</td>
 	</tr>
 	</table>
 </section>
 
+<script type="text/html" id="template-photo">
+	<div class="img-container" data-bind="template: { name: 'template-img-container'}" }> 
+
+	</div> 
+</script>
+
+<script type="text/html" id="template-pin">
+	<div class="circle"></div>
+<script>
+<script type="text/html" id="template-img-container">
+		<!-- ko if: tackTopLeft -->
+			<div data-bind="template: { name: 'template-'+ tackTopLeft}"></div>
+		<!-- /ko -->
+		<!-- ko if: tackTopRight -->
+			<div style="margin-left: 97%;" data-bind="template: { name: 'template-'+ tackTopRight"></div>
+		<!-- /ko -->
+		<div class="shadow">&nbsp;</div>
+		<div class="polaroid-container">
+	  	<img data-bind="attr: { src: url }">
+	  	<!-- ko if: comment -->
+	  	<p data-bind="text: comment"></p>
+	  	<!-- /ko -->
+<script>

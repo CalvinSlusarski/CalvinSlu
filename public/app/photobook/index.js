@@ -57,5 +57,6 @@ define(['durandal/app', 'durandal/system',  'jquery', 'knockout', 'jquery-ui'], 
         self.comment = comment;
         self.tackTopLeft = 'pin'
         self.tackTopRight = 'pin'
+        self.frameType = 'photo'
     }
 });
