@@ -4,7 +4,7 @@
 		<tr data-bind="foreach: photoInArray">
 		<td>
 			<span data-bind="text: frameType"></span>
-		<div class="stickyNote" data-bind="style: { 'left': $index()+1*400 }, template: {name: frameType }">
+		<div class="stickyNote" data-bind="style: { 'left': $index()+1*400 }, template: {name: 'template-' + frameType }">
 
 		</div> 
 		</td>
