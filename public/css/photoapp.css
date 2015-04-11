@@ -66,12 +66,12 @@ input.invalid { border: 1px solid red !important; background-color: #FFAAAA !imp
 .configuration button { height: 2em; }
 
 /* Custom CSS */
-.container {
+.img-container {
     position: relative;
     display: inline-block; /* or block */
     margin: 20px; /* not required */
 }
-.img-container {
+.polaroid.-container {
     padding: 5px;
     border: 1px solid #cccccc;
     border-radius: 2px;
