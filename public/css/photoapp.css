@@ -71,7 +71,7 @@ input.invalid { border: 1px solid red !important; background-color: #FFAAAA !imp
     display: inline-block; /* or block */
     margin: 20px; /* not required */
 }
-.polaroid.-container {
+.polaroid-container {
     padding: 5px;
     border: 1px solid #cccccc;
     border-radius: 2px;
