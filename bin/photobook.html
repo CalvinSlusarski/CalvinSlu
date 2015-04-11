@@ -32,5 +32,13 @@
     <body>
         <div id="applicationHost"></div>
         <script src="lib/require/require.js" data-main="app/main"></script>
+                <div id="draggable" class="ui-widget-content">
+    <p>Drag me around</p>
+</div>
+
+        <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+        <script>
+            $( "#draggable" ).draggable();
+        </script>
     </body>
 </html>
