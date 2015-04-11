@@ -66,14 +66,27 @@ input.invalid { border: 1px solid red !important; background-color: #FFAAAA !imp
 .configuration button { height: 2em; }
 
 /* Custom CSS */
-  padding-top: 5px;
-  padding-right: 5px;
-  padding-left: 5px;
-  padding-bottom: 10px;
-  box-shadow: 3px 3px 1px #C7C7C7;
-  border: 1px solid rgb(174, 174, 174);
-  width: 215px;
-.polaroid img {
-    height: 151px;
-    width: 131px;
+.container {
+    position: relative;
+    display: inline-block; /* or block */
+    margin: 20px; /* not required */
+}
+.img-container {
+    padding: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 2px;
+    display: inline-block;
+    background: white;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.shadow {
+    box-shadow: 0 20px 5px 5px #cccccc; /* adjust color, blur or spread if you want */
+    transform: skewy(-3deg);
+    position: absolute;
+    left: 8px;
+    bottom: 22px; /* adjust this to change the shadow's size */
+    height: 20px;
+    width: 100px;
 }
