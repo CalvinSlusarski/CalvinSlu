@@ -21,25 +21,7 @@
 <script type="text/html" id="template-pin">
 	<div class="circle"></div>
 </script>
-<script type="text/html" id="template-img-container">
-		<!-- ko if: tackTopLeft -->
-			<div data-bind="template: { name: 'template-'+ tackTopLeft}"></div>
-		<!-- /ko -->
-		<!-- ko if: tackTopRight -->
-			<div style="margin-left: 97%;" data-bind="template: { name: 'template-'+ tackTopRight"></div>
-		<!-- /ko -->
-		<div class="shadow">&nbsp;</div>
-		<div class="polaroid-container">
-	  	<img data-bind="attr: { src: url }">
-	  	<!-- ko if: comment -->
-	  	<p data-bind="text: comment"></p>
-	  	<!-- /ko -->
-	  	<!-- ko if: edit-->
-			<div style="margin-left: 97%;" data-bind="template: { name: 'template-edit'"></div>
-				 template-edit
-	  	<!-- /ko -->
-</script>
-<script type="text/html" id="template-edit">
+<script type="text/html" id="template-editor">
 	<form class="form-inline">
 	  <div class="form-group">
 	    <label class="sr-only" for="forURL">URL</label>
@@ -56,4 +38,21 @@
 	  // </div>
 	  // <button type="submit" class="btn btn-default">Sign in</button>
 	</form>
+</script>
+<script type="text/html" id="template-img-container">
+		<!-- ko if: tackTopLeft -->
+			<div data-bind="template: { name: 'template-'+ tackTopLeft}"></div>
+		<!-- /ko -->
+		<!-- ko if: tackTopRight -->
+			<div style="margin-left: 97%;" data-bind="template: { name: 'template-'+ tackTopRight"></div>
+		<!-- /ko -->
+		<div class="shadow">&nbsp;</div>
+		<div class="polaroid-container">
+	  	<img data-bind="attr: { src: url }">
+	  	<!-- ko if: comment -->
+	  	<p data-bind="text: comment"></p>
+	  	<!-- /ko -->
+	  	<!-- ko if: edit-->
+			<div data-bind="template: { name: 'template-editor'"></div>
+	  	<!-- /ko -->
 </script>
