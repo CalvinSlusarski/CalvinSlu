@@ -5,8 +5,12 @@
 		<td>
 <!-- 		<div data-bind="foreach: photoInArray"> -->
 		<div class="img-container"> 
-			<div class="circle"></div>
-			<div class="circle"></div>
+			<!-- ko if: tackTopLeft -->
+				<div class="circle"></div>
+			<!-- /ko -->
+			<!-- ko if: tackTopRight -->
+				<div style="margin-left: 97%;" class="circle"></div>
+			<!-- /ko -->
 			<div class="shadow">&nbsp;</div>
 			<div class="polaroid-container">
 		  	<img data-bind="attr: { src: url }">

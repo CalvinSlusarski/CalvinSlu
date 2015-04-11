@@ -9,7 +9,7 @@
         new photo(
             'https://scontent-ord.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/4261_1145626807792_8143272_n.jpg?oh=29227312bf3639556270e2a55883b67c&oe=55E074FE'
         )]);
-        
+
     // end of temp
 
     return vm;
@@ -50,5 +50,7 @@
         self = this;
         self.url = url;
         self.comment = comment;
+        self.tackTopLeft = 'pin'
+        self.tackTopRight = 'pin'
     }
 });
