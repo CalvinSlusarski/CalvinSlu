@@ -1,5 +1,5 @@
 ﻿
-define(['durandal/app', 'durandal/system', 'knockout'], function (app, system, ko) {
+define(['durandal/app', 'durandal/system',  'jquery', 'knockout'], function (app, system,  $, ko,) {
     var vm = {};
     vm.photoInArray = ko.observableArray([]);
     // temp
